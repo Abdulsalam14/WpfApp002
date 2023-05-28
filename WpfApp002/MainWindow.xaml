@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfApp002.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp002"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="600">
+    <Grid >
+        <StackPanel Margin="20,40" Height="200" VerticalAlignment="Top" >
+            <TextBlock Text="Login" TextAlignment="Center" Width="200" Height="30" FontSize="20" FontWeight="DemiBold" Margin="0,10,0,10"></TextBlock>
+            <TextBox Name="lgnbx" Width="200" Height="30" FontSize="20"></TextBox>
+            <TextBlock Text="Password" TextAlignment="Center" Width="200" Height="30" FontSize="20" FontWeight="DemiBold" Margin="0,30,0,10"></TextBlock>
+            <TextBox Name="pswrdbx" Width="200" Height="30" FontSize="20"></TextBox>
+        </StackPanel>
+        <StackPanel Margin="100,260,100,105" Height="40" Orientation="Horizontal" >
+            <Button Width="150" Content="SIGN IN" Margin="20,0" FontWeight="DemiBold" FontSize="20" Click="Button_Click"></Button>
+            <Button Width="150" Content="SIGN UP" Margin="30,0,20,0" FontWeight="DemiBold" FontSize="20" Click="Button_Click_1" ></Button>
+        </StackPanel>
+    </Grid>
+</Window>

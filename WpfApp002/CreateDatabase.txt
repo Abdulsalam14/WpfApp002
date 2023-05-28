@@ -1,0 +1,28 @@
+﻿CREATE DATABASE UserLogin
+
+GO
+
+use UserLogin
+
+GO
+
+GO
+
+CREATE TABLE LoginPassword(
+	Id int IDENTITY(1,1) PRIMARY KEY,
+	[Login] nvarchar(20) NOT NULL,
+	[Password] nvarchar(20) NOT NULL
+)
+
+GO
+
+
+GO
+
+INSERT INTO LoginPassword([Login],[Password]) VALUES ('login1','password1')
+
+GO
+
+
+SELECT *
+FROM LoginPassword
